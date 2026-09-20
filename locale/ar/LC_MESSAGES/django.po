@@ -564,7 +564,7 @@ msgstr "النوع:"
 
 #: .\templates\crops\welcome.html:5 .\templates\crops\welcome.html:15
 msgid "Welcome to Filahia"
-msgstr "مرحبًا بك في Filahia"
+msgstr "مرحبًا بك في فلاحيا"
 
 #: .\templates\crops\welcome.html:18
 msgid ""
@@ -2218,3 +2218,5 @@ msgstr "جوت"
 
 msgid "coffee"
 msgstr "قهوة"
+msgid "Filahia"
+msgstr "فلاحيا"
