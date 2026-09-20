@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.svg" alt="Filahia, crop recommendation from soil and climate data" width="100%">
+</p>
+
 # Filahia
 
 Filahia (فلاحيا, from *filaha*, "agriculture" in Arabic) is a web application that recommends the most suitable crop from soil and climate
