@@ -561,8 +561,8 @@ msgid "Type:"
 msgstr "Type :"
 
 #: .\templates\crops\welcome.html:5 .\templates\crops\welcome.html:15
-msgid "Welcome to Crop Advisor"
-msgstr "Bienvenue sur Crop Advisor"
+msgid "Welcome to Filahia"
+msgstr "Bienvenue sur Filahia"
 
 #: .\templates\crops\welcome.html:18
 msgid ""

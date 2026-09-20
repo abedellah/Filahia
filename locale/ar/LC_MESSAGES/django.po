@@ -563,8 +563,8 @@ msgid "Type:"
 msgstr "النوع:"
 
 #: .\templates\crops\welcome.html:5 .\templates\crops\welcome.html:15
-msgid "Welcome to Crop Advisor"
-msgstr "مرحبًا بك في مستشار المحاصيل"
+msgid "Welcome to Filahia"
+msgstr "مرحبًا بك في Filahia"
 
 #: .\templates\crops\welcome.html:18
 msgid ""
