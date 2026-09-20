@@ -17,4 +17,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+The OCR feature also needs the [Tesseract](https://github.com/tesseract-ocr/tesseract)
+program installed on the system (with the French and Arabic language data).
+
 Set `DJANGO_SECRET_KEY` in the environment for anything beyond local use.
