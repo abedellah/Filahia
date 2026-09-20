@@ -1,6 +1,6 @@
-# Crop Recommendation (Django)
+# Filahia
 
-Web application that recommends the most suitable crop from soil and climate
+Filahia (from *filaha*, "agriculture" in Arabic) is a web application that recommends the most suitable crop from soil and climate
 measurements (N, P, K, temperature, humidity, pH, rainfall) using a trained
 scikit-learn model. Measurements can also be extracted from an uploaded
 document through an OCR pipeline. The interface is available in French and

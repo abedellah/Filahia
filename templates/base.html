@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% trans "Crop Recommendation System" %}{% endblock %}</title>
+    <title>{% block title %}Filahia{% endblock %}</title>
     {% if LANGUAGE_CODE == 'ar' %}
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.rtl.min.css" rel="stylesheet">
     {% else %}
@@ -485,7 +485,7 @@
     <div class="container">
         <a class="navbar-brand" href="{% url 'crops:welcome' %}">
             <i class="fas fa-seedling"></i>
-            <span>{% trans "Crop Advisor" %}</span>
+            <span>Filahia</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="{% trans 'Toggle navigation' %}">
             <span class="navbar-toggler-icon"></span>
@@ -570,7 +570,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-md-start">
-                <p class="mb-1">&copy; 2025 {% trans "Crop Recommendation System" %}</p>
+                <p class="mb-1">&copy; 2025 Filahia</p>
                 <small class="text-muted">{% trans "Powered by Machine Learning & AI" %}</small>
             </div>
             <div class="col-md-6 text-md-end">
