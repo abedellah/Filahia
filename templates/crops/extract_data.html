@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Extracted Data" %}{% endblock %}
+
+{% block content %}
+<div class="card mb-4">
+    <div class="card-header bg-success text-white">
+        <div class="row align-items-center">
+            <div class="col">
+                <h4 class="mb-0">
+                    <i class="fas fa-file-alt me-2"></i>
+                    {% trans "Extracted Data" %}
+                </h4>
+            </div>
+            <div class="col-auto">
+                <a href="{% url 'crops:index' %}" class="btn btn-light btn-sm">
+                    <i class="fas fa-arrow-left me-1"></i>
+                    {% trans "Back to Home" %}
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        {% if extraction %}
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="alert alert-info">
+                        <h5 class="alert-heading">
+                            <i class="fas fa-info-circle me-2"></i>
+                            {% trans "Extraction Summary" %}
+                        </h5>
+                        <div class="mb-2">
+                            <strong>{% trans "Detected Language:" %}</strong> {{ extraction.detected_language|upper }}
+                        </div>
+                        <div>
+                            <strong>{% trans "Confidence:" %}</strong> 
+                            <span class="badge bg-{% if extraction.extraction_confidence > 70 %}success{% elif extraction.extraction_confidence > 50 %}warning{% else %}danger{% endif %}">
+                                {{ extraction.extraction_confidence|floatformat:2 }}%
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-light">
+                        <h5 class="alert-heading">
+                            <i class="fas fa-lightbulb me-2"></i>
+                            {% trans "Tips" %}
+                        </h5>
+                        <small class="mb-0">
+                            {% trans "Check the extracted values below. You can edit them before making a prediction." %}
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+            <h5 class="text-primary mb-3">
+                <i class="fas fa-table me-2"></i>
+                {% trans "Extracted Values" %}
+            </h5>
+            <form method="post" action="{% url 'crops:predict' %}" id="extractionForm">
+                {% csrf_token %}
+                <div class="row">
+                    <!-- Soil Parameters -->
+                    <div class="col-md-6">
+                        <h6 class="text-primary mb-3">
+                            <i class="fas fa-mountain me-2"></i>{% trans "Soil Parameters" %}
+                        </h6>
+
+                        {% for field in form.visible_fields %}
+                            {% if field.name in 'nitrogen phosphorus potassium ph_level' %}
+                                <div class="mb-3">
+                                    <label for="{{ field.id_for_label }}" class="form-label fw-bold">
+                                        {{ field.label }}
+                                    </label>
+                                    {{ field }}
+                                    {% if field.errors %}
+                                        <div class="text-danger small">{{ field.errors.0 }}</div>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+
+                    <!-- Climate Parameters -->
+                    <div class="col-md-6">
+                        <h6 class="text-info mb-3">
+                            <i class="fas fa-cloud-sun me-2"></i>{% trans "Climate Parameters" %}
+                        </h6>
+
+                        {% for field in form.visible_fields %}
+                            {% if field.name in 'temperature humidity rainfall' %}
+                                <div class="mb-3">
+                                    <label for="{{ field.id_for_label }}" class="form-label fw-bold">
+                                        {{ field.label }}
+                                    </label>
+                                    {{ field }}
+                                    {% if field.errors %}
+                                        <div class="text-danger small">{{ field.errors.0 }}</div>
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg px-5" id="predictBtn">
+                        <i class="fas fa-magic me-2"></i>
+                        {% trans "Get Recommendation" %}
+                    </button>
+                </div>
+            </form>
+
+            <hr class="my-4">
+
+            <h5 class="text-primary mb-3">
+                <i class="fas fa-align-left me-2"></i>
+                {% trans "Extracted Text" %}
+            </h5>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <pre class="mb-0">{{ extraction.extracted_text }}</pre>
+                </div>
+            </div>
+        {% else %}
+            <div class="alert alert-warning">
+                <h5 class="alert-heading">
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    {% trans "No Extraction Data Found" %}
+                </h5>
+                <p>
+                    {% trans "We couldn't find any extracted data. Please try uploading a document again." %}
+                </p>
+                <a href="{% url 'crops:index' %}" class="btn btn-primary">
+                    <i class="fas fa-upload me-1"></i>
+                    {% trans "Upload Document" %}
+                </a>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const extractionForm = document.getElementById('extractionForm');
+    const predictBtn = document.getElementById('predictBtn');
+
+    if (extractionForm) {
+        extractionForm.addEventListener('submit', function() {
+            predictBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>{% trans "Processing..." %}';
+            predictBtn.disabled = true;
+        });
+    }
+});
+</script>
+{% endblock %}

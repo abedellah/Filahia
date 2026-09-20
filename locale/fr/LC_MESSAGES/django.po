@@ -1,0 +1,2158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-25 22:47+0100\n"
+"PO-Revision-Date: 2025-06-26 14:30+0100\n"
+"Last-Translator: Votre Nom <votre@email.com>\n"
+"Language-Team: French <fr@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\crops\forms.py:8 .\crops\forms.py:135
+#: .\templates\crops\ocr_upload.html:167
+msgid "Nitrogen (N)"
+msgstr "Azote (N)"
+
+#: .\crops\forms.py:13
+msgid "Enter nitrogen content (0-200)"
+msgstr "Teneur en azote (0-200)"
+
+#: .\crops\forms.py:19 .\crops\forms.py:140
+#: .\templates\crops\ocr_upload.html:168
+msgid "Phosphorus (P)"
+msgstr "Phosphore (P)"
+
+#: .\crops\forms.py:24
+msgid "Enter phosphorus content (0-150)"
+msgstr "Teneur en phosphore (0-150)"
+
+#: .\crops\forms.py:30 .\crops\forms.py:145
+#: .\templates\crops\ocr_upload.html:169
+msgid "Potassium (K)"
+msgstr "Potassium (K)"
+
+#: .\crops\forms.py:35
+msgid "Enter potassium content (0-300)"
+msgstr "Teneur en potassium (0-300)"
+
+#: .\crops\forms.py:41 .\crops\forms.py:155
+msgid "Temperature (°C)"
+msgstr "Température (°C)"
+
+#: .\crops\forms.py:46
+msgid "Enter temperature in Celsius"
+msgstr "Température en Celsius"
+
+#: .\crops\forms.py:52 .\crops\forms.py:160
+msgid "Humidity (%)"
+msgstr "Humidité (%)"
+
+#: .\crops\forms.py:57
+msgid "Enter humidity percentage (0-100)"
+msgstr "Humidité relative (0-100%)"
+
+#: .\crops\forms.py:63 .\crops\forms.py:150
+#: .\templates\crops\ocr_upload.html:170
+msgid "pH Level"
+msgstr "pH du sol"
+
+#: .\crops\forms.py:68
+msgid "Enter pH level (0-14)"
+msgstr "Niveau de pH (0-14)"
+
+#: .\crops\forms.py:74 .\crops\forms.py:165
+msgid "Rainfall (mm)"
+msgstr "Précipitations (mm)"
+
+#: .\crops\forms.py:79
+msgid "Enter rainfall in mm"
+msgstr "Précipitations en mm"
+
+#: .\crops\forms.py:86
+msgid "Image (JPG, PNG, BMP, TIFF)"
+msgstr "Image (JPG, PNG, BMP, TIFF)"
+
+#: .\crops\forms.py:87
+msgid "PDF Document"
+msgstr "Document PDF"
+
+#: .\crops\forms.py:91
+msgid "Upload File"
+msgstr "Télécharger un fichier"
+
+#: .\crops\forms.py:96
+msgid "Supported formats: JPG, PNG, BMP, TIFF, PDF (Max size: 10MB)"
+msgstr "Formats acceptés : JPG, PNG, BMP, TIFF, PDF (Max : 10 Mo)"
+
+#: .\crops\forms.py:100
+msgid "OCR Language"
+msgstr "Langue OCR"
+
+#: .\crops\forms.py:102
+msgid "Auto-detect"
+msgstr "Détection automatique"
+
+#: .\crops\forms.py:103
+msgid "English"
+msgstr "Anglais"
+
+#: .\crops\forms.py:104
+msgid "French"
+msgstr "Français"
+
+#: .\crops\forms.py:105
+msgid "Arabic"
+msgstr "Arabe"
+
+#: .\crops\forms.py:116 .\templates\crops\ocr_upload.html:243
+msgid "File size must be less than 10MB"
+msgstr "Taille maximale : 10 Mo"
+
+#: .\crops\forms.py:122
+msgid "Unsupported file format"
+msgstr "Format non supporté"
+
+#: .\crops\forms.py:136 .\templates\crops\index.html:35
+msgid "Nitrogen content in soil (ppm)"
+msgstr "Azote dans le sol (ppm)"
+
+#: .\crops\forms.py:137
+msgid "Enter nitrogen value"
+msgstr "Valeur d'azote"
+
+#: .\crops\forms.py:141 .\templates\crops\index.html:37
+msgid "Phosphorus content in soil (ppm)"
+msgstr "Phosphore dans le sol (ppm)"
+
+#: .\crops\forms.py:142
+msgid "Enter phosphorus value"
+msgstr "Valeur de phosphore"
+
+#: .\crops\forms.py:146 .\templates\crops\index.html:39
+msgid "Potassium content in soil (ppm)"
+msgstr "Potassium dans le sol (ppm)"
+
+#: .\crops\forms.py:147
+msgid "Enter potassium value"
+msgstr "Valeur de potassium"
+
+#: .\crops\forms.py:151 .\templates\crops\index.html:41
+msgid "Soil pH level (0-14)"
+msgstr "pH du sol (0-14)"
+
+#: .\crops\forms.py:152
+msgid "Enter pH value"
+msgstr "Valeur de pH"
+
+#: .\crops\forms.py:156 .\templates\crops\index.html:65
+msgid "Average temperature in Celsius"
+msgstr "Température moyenne (°C)"
+
+#: .\crops\forms.py:157
+msgid "Enter temperature"
+msgstr "Température"
+
+#: .\crops\forms.py:161 .\templates\crops\index.html:67
+msgid "Relative humidity percentage"
+msgstr "Humidité relative (%)"
+
+#: .\crops\forms.py:162
+msgid "Enter humidity"
+msgstr "Humidité"
+
+#: .\crops\forms.py:166 .\templates\crops\index.html:69
+msgid "Annual rainfall in millimeters"
+msgstr "Précipitations annuelles (mm)"
+
+#: .\crops\forms.py:167
+msgid "Enter rainfall"
+msgstr "Précipitations"
+
+#: .\crops\views.py:61
+msgid "ML models are not loaded. Please contact administrator."
+msgstr "Les modèles d'IA ne sont pas chargés. Contactez l'administrateur."
+
+#: .\crops\views.py:97
+#, python-format
+msgid "Recommended crop: %(crop)s%(confidence)s"
+msgstr "Culture recommandée : %(crop)s%(confidence)s"
+
+#: .\crops\views.py:114
+#, python-format
+msgid "Prediction failed: %(error)s"
+msgstr "Échec de prédiction : %(error)s"
+
+#: .\crops\views.py:124 .\crops\views.py:208
+msgid "Please correct the form errors."
+msgstr "Corrigez les erreurs du formulaire."
+
+#: .\crops\views.py:187
+msgid "Data extracted successfully!"
+msgstr "Données extraites avec succès"
+
+#: .\crops\views.py:190
+msgid "File processed successfully!"
+msgstr "Fichier traité avec succès"
+
+#: .\crops\views.py:195
+#, python-format
+msgid "OCR processing failed: %(error)s"
+msgstr "Échec OCR : %(error)s"
+
+#: .\templates\base.html:9 .\templates\base.html:573
+msgid "Crop Recommendation System"
+msgstr "Système de recommandation de cultures"
+
+#: .\templates\base.html:488
+msgid "Crop Advisor"
+msgstr "Conseiller Agricole"
+
+#: .\templates\base.html:490
+msgid "Toggle navigation"
+msgstr "Menu"
+
+#: .\templates\base.html:498
+msgid "Welcome"
+msgstr "Bienvenue"
+
+#: .\templates\base.html:504 .\templates\crops\welcome.html:60
+#: .\templates\crops\welcome.html:270
+msgid "Manual Input"
+msgstr "Saisie manuelle"
+
+#: .\templates\base.html:510
+msgid "OCR Upload"
+msgstr "Import OCR"
+
+#: .\templates\base.html:516
+msgid "History"
+msgstr "Historique"
+
+#: .\templates\base.html:523
+msgid "Select Language"
+msgstr "Langue"
+
+#: .\templates\base.html:534
+msgid "Help"
+msgstr "Aide"
+
+#: .\templates\base.html:559
+msgid "Close"
+msgstr "Fermer"
+
+#: .\templates\base.html:574
+msgid "Powered by Machine Learning & AI"
+msgstr "Propulsé par Machine Learning & IA"
+
+#: .\templates\base.html:588
+msgid "Helping farmers make informed decisions with AI-driven insights"
+msgstr "Aide les agriculteurs à prendre des décisions éclairées grâce à l'IA"
+
+#: .\templates\crops\extract_data.html:4 .\templates\crops\extract_data.html:13
+msgid "Extracted Data"
+msgstr "Données extraites"
+
+#: .\templates\crops\extract_data.html:19 .\templates\crops\ocr_upload.html:22
+msgid "Back to Home"
+msgstr "Retour à l'accueil"
+
+#: .\templates\crops\extract_data.html:31
+msgid "Extraction Summary"
+msgstr "Résumé d'extraction"
+
+#: .\templates\crops\extract_data.html:34
+msgid "Detected Language:"
+msgstr "Langue détectée :"
+
+#: .\templates\crops\extract_data.html:37
+msgid "Confidence:"
+msgstr "Confiance :"
+
+#: .\templates\crops\extract_data.html:48
+msgid "Tips"
+msgstr "Conseils"
+
+#: .\templates\crops\extract_data.html:51
+msgid ""
+"Check the extracted values below. You can edit them before making a "
+"prediction."
+msgstr "Vérifiez les valeurs ci-dessous. Modifiez-les avant prédiction."
+
+#: .\templates\crops\extract_data.html:59
+msgid "Extracted Values"
+msgstr "Valeurs extraites"
+
+#: .\templates\crops\extract_data.html:67 .\templates\crops\index.html:25
+msgid "Soil Parameters"
+msgstr "Paramètres du sol"
+
+#: .\templates\crops\extract_data.html:88 .\templates\crops\index.html:55
+msgid "Climate Parameters"
+msgstr "Paramètres climatiques"
+
+#: .\templates\crops\extract_data.html:110 .\templates\crops\index.html:83
+msgid "Get Recommendation"
+msgstr "Obtenir recommandation"
+
+#: .\templates\crops\extract_data.html:119
+msgid "Extracted Text"
+msgstr "Texte extrait"
+
+#: .\templates\crops\extract_data.html:130
+msgid "No Extraction Data Found"
+msgstr "Aucune donnée extraite"
+
+#: .\templates\crops\extract_data.html:133
+msgid ""
+"We couldn't find any extracted data. Please try uploading a document again."
+msgstr "Aucune donnée extraite. Réessayez avec un autre document."
+
+#: .\templates\crops\extract_data.html:137 .\templates\crops\welcome.html:97
+#: .\templates\crops\welcome.html:121 .\templates\crops\welcome.html:274
+msgid "Upload Document"
+msgstr "Importer document"
+
+#: .\templates\crops\extract_data.html:153 .\templates\crops\index.html:157
+#: .\templates\crops\ocr_upload.html:110 .\templates\crops\ocr_upload.html:264
+msgid "Processing..."
+msgstr "Analyse en cours..."
+
+#: .\templates\crops\history.html:4 .\templates\crops\history.html:13
+msgid "Prediction History"
+msgstr "Historique des prédictions"
+
+#: .\templates\crops\history.html:19
+msgid "New Prediction"
+msgstr "Nouvelle prédiction"
+
+#: .\templates\crops\history.html:31
+msgid "Total Predictions"
+msgstr "Prédictions totales"
+
+#: .\templates\crops\history.html:41 .\templates\crops\history.html:53
+#: .\templates\crops\history.html:65 .\templates\crops\history.html:157
+msgid "N/A"
+msgstr "N/D"
+
+#: .\templates\crops\history.html:44
+msgid "Latest Recommendation"
+msgstr "Dernière recommandation"
+
+#: .\templates\crops\history.html:56
+msgid "Latest Confidence"
+msgstr "Dernière confiance"
+
+#: .\templates\crops\history.html:68
+msgid "Latest Source"
+msgstr "Dernière source"
+
+#: .\templates\crops\history.html:78
+msgid "Date & Time"
+msgstr "Date et heure"
+
+#: .\templates\crops\history.html:79
+msgid "Recommended Crop"
+msgstr "Culture recommandée"
+
+#: .\templates\crops\history.html:80
+msgid "NPK Values"
+msgstr "Valeurs NPK"
+
+#: .\templates\crops\history.html:81 .\templates\crops\ocr_upload.html:174
+msgid "Climate"
+msgstr "Climat"
+
+#: .\templates\crops\history.html:82
+msgid "Soil pH"
+msgstr "pH du sol"
+
+#: .\templates\crops\history.html:83
+msgid "Confidence"
+msgstr "Confiance"
+
+#: .\templates\crops\history.html:84
+msgid "Source"
+msgstr "Source"
+
+#: .\templates\crops\history.html:163
+msgid "Manual"
+msgstr "Manuel"
+
+#: .\templates\crops\history.html:167
+msgid "OCR"
+msgstr "OCR"
+
+#: .\templates\crops\history.html:187
+msgid "Previous"
+msgstr "Précédent"
+
+#: .\templates\crops\history.html:207
+msgid "Next"
+msgstr "Suivant"
+
+#: .\templates\crops\history.html:221
+msgid "No predictions found yet. Try making one!"
+msgstr "Aucune prédiction. Effectuez-en une !"
+
+#: .\templates\crops\index.html:4
+msgid "Crop Recommendation - Prediction"
+msgstr "Recommandation de cultures - Prédiction"
+
+#: .\templates\crops\index.html:14
+msgid "Get Crop Recommendation"
+msgstr "Obtenir une recommandation"
+
+#: .\templates\crops\index.html:99
+msgid "AI-Powered Recommendations"
+msgstr "Recommandations par IA"
+
+#: .\templates\crops\index.html:101
+msgid ""
+"Our machine learning model analyzes soil and climate data to suggest the "
+"most suitable crops for your conditions."
+msgstr "Notre IA analyse les données pour recommander les meilleures cultures."
+
+#: .\templates\crops\index.html:111
+msgid "Quick Tips"
+msgstr "Conseils"
+
+#: .\templates\crops\index.html:114
+msgid "NPK values typically range 0-200 ppm"
+msgstr "NPK : généralement 0-200 ppm"
+
+#: .\templates\crops\index.html:115
+msgid "pH levels should be between 4.0-10.0"
+msgstr "pH optimal : 4.0-10.0"
+
+#: .\templates\crops\index.html:116
+msgid "Temperature in Celsius (10-50°C)"
+msgstr "Température : 10-50°C"
+
+#: .\templates\crops\index.html:117
+#, python-format
+msgid "Humidity as percentage (10-100%%)"
+msgstr "Humidité : 10-100%%"
+
+#: .\templates\crops\index.html:127
+msgid "Recent Predictions"
+msgstr "Dernières prédictions"
+
+#: .\templates\crops\index.html:134
+msgid "ago"
+msgstr ""
+
+#: .\templates\crops\index.html:140
+msgid "View All History"
+msgstr "Voir l'historique"
+
+#: .\templates\crops\ocr_upload.html:4
+msgid "OCR Document Upload"
+msgstr "Import de documents par OCR"
+
+#: .\templates\crops\ocr_upload.html:16
+msgid "Extract Data from Image/Document"
+msgstr "Extraire des données d'image/document"
+
+#: .\templates\crops\ocr_upload.html:29
+msgid ""
+"Upload an image or document containing soil test results, and we'll extract "
+"the data automatically using OCR technology."
+msgstr "Importez un rapport d'analyse de sol pour extraction automatique par OCR."
+
+#: .\templates\crops\ocr_upload.html:51
+msgid "Supported formats: JPG, PNG, PDF, TXT. Maximum file size: 10MB"
+msgstr "Formats : JPG, PNG, PDF, TXT. Taille max : 10 Mo"
+
+#: .\templates\crops\ocr_upload.html:70
+msgid "Auto-detect recommended"
+msgstr "Détection automatique"
+
+#: .\templates\crops\ocr_upload.html:89
+msgid "File Preview"
+msgstr "Aperçu"
+
+#: .\templates\crops\ocr_upload.html:99
+msgid "Upload & Extract Data"
+msgstr "Importer et extraire"
+
+#: .\templates\crops\ocr_upload.html:112
+msgid "Processing your document..."
+msgstr "Traitement du document..."
+
+#: .\templates\crops\ocr_upload.html:113
+msgid "This may take a few moments depending on the file size and complexity."
+msgstr "Analyse en cours (dépend de la taille du fichier)"
+
+#: .\templates\crops\ocr_upload.html:125
+msgid "OCR Tips"
+msgstr "Conseils OCR"
+
+#: .\templates\crops\ocr_upload.html:132
+msgid "Use high-resolution, clear images"
+msgstr "Utilisez des images nettes et haute résolution"
+
+#: .\templates\crops\ocr_upload.html:136
+msgid "Ensure good lighting and contrast"
+msgstr "Bon éclairage et contraste"
+
+#: .\templates\crops\ocr_upload.html:140
+msgid "Avoid blurry or skewed images"
+msgstr "Évitez les images floues ou inclinées"
+
+#: .\templates\crops\ocr_upload.html:144
+msgid "Include parameter names (N, P, K, pH, etc.)"
+msgstr "Inclure les paramètres (N, P, K, pH, etc.)"
+
+#: .\templates\crops\ocr_upload.html:148
+msgid "Multiple languages supported"
+msgstr "Plusieurs langues supportées"
+
+#: .\templates\crops\ocr_upload.html:159
+msgid "Detected Parameters"
+msgstr "Paramètres détectés"
+
+#: .\templates\crops\ocr_upload.html:165
+msgid "Soil"
+msgstr "Sol"
+
+#: .\templates\crops\ocr_upload.html:176
+msgid "Temperature"
+msgstr "Température"
+
+#: .\templates\crops\ocr_upload.html:177
+msgid "Humidity"
+msgstr "Humidité"
+
+#: .\templates\crops\ocr_upload.html:178
+msgid "Rainfall"
+msgstr "Précipitations"
+
+#: .\templates\crops\ocr_upload.html:190
+msgid "Example Formats"
+msgstr "Exemples de formats"
+
+#: .\templates\crops\ocr_upload.html:196
+msgid "Text format:"
+msgstr "Format texte :"
+
+#: .\templates\crops\ocr_upload.html:203
+msgid "Table format:"
+msgstr "Format tableau :"
+
+#: .\templates\crops\ocr_upload.html:234
+msgid "Please select a valid file type (JPG, PNG, PDF, or TXT)"
+msgstr "Sélectionnez un format valide (JPG, PNG, PDF, TXT)"
+
+#: .\templates\crops\ocr_upload.html:285 .\templates\crops\ocr_upload.html:303
+msgid "Size:"
+msgstr "Taille :"
+
+#: .\templates\crops\ocr_upload.html:285 .\templates\crops\ocr_upload.html:303
+msgid "Type:"
+msgstr "Type :"
+
+#: .\templates\crops\welcome.html:5 .\templates\crops\welcome.html:15
+msgid "Welcome to Crop Advisor"
+msgstr "Bienvenue sur Crop Advisor"
+
+#: .\templates\crops\welcome.html:18
+msgid ""
+"Harness the power of artificial intelligence to make informed agricultural "
+"decisions. Get personalized crop recommendations based on your soil and "
+"climate conditions."
+msgstr "Profitez de la puissance de l'IA pour des décisions agricoles éclairées. Recommandations personnalisées selon vos conditions."
+
+#: .\templates\crops\welcome.html:45
+msgid "Choose Your Method"
+msgstr "Choisissez votre méthode"
+
+#: .\templates\crops\welcome.html:48
+msgid "Select how you want to input your agricultural data"
+msgstr "Sélectionnez votre méthode de saisie"
+
+#: .\templates\crops\welcome.html:62
+msgid ""
+"Enter your soil and climate parameters manually using our intuitive form. "
+"Perfect when you have specific test results."
+msgstr "Saisie manuelle des paramètres pour des résultats précis."
+
+#: .\templates\crops\welcome.html:67
+msgid "NPK levels (Nitrogen, Phosphorus, Potassium)"
+msgstr "Niveaux NPK (Azote, Phosphore, Potassium)"
+
+#: .\templates\crops\welcome.html:71
+msgid "Soil pH level"
+msgstr "pH du sol"
+
+#: .\templates\crops\welcome.html:75
+msgid "Temperature and humidity data"
+msgstr "Température et humidité"
+
+#: .\templates\crops\welcome.html:79
+msgid "Annual rainfall information"
+msgstr "Précipitations annuelles"
+
+#: .\templates\crops\welcome.html:84
+msgid "Start Manual Input"
+msgstr "Commencer"
+
+#: .\templates\crops\welcome.html:99
+msgid ""
+"Upload your soil test report or agricultural document and let our AI extract "
+"the data automatically."
+msgstr "Importez un rapport d'analyse pour extraction automatique par notre IA."
+
+#: .\templates\crops\welcome.html:104
+msgid "PDF, JPG, PNG formats supported"
+msgstr "Formats PDF, JPG, PNG"
+
+#: .\templates\crops\welcome.html:108
+msgid "Multi-language OCR (EN, FR, AR)"
+msgstr "OCR multilingue (EN, FR, AR)"
+
+#: .\templates\crops\welcome.html:112
+msgid "Automatic data extraction"
+msgstr "Extraction automatique"
+
+#: .\templates\crops\welcome.html:116
+msgid "Fast and accurate processing"
+msgstr "Traitement rapide et précis"
+
+#: .\templates\crops\welcome.html:133
+msgid "Why Choose Our Platform?"
+msgstr "Pourquoi choisir notre plateforme ?"
+
+#: .\templates\crops\welcome.html:136
+msgid "Discover the features that make our system unique"
+msgstr "Découvrez nos fonctionnalités uniques"
+
+#: .\templates\crops\welcome.html:146
+msgid "High Accuracy"
+msgstr "Haute précision"
+
+#: .\templates\crops\welcome.html:148
+msgid ""
+"Our machine learning models are trained on extensive agricultural datasets, "
+"providing reliable crop recommendations."
+msgstr "Modèles entraînés sur des données agricoles pour des recommandations fiables."
+
+#: .\templates\crops\welcome.html:158
+msgid "Instant Results"
+msgstr "Résultats instantanés"
+
+#: .\templates\crops\welcome.html:160
+msgid ""
+"Get crop recommendations instantly. Our optimized algorithms process your "
+"data in seconds."
+msgstr "Recommandations en secondes grâce à nos algorithmes optimisés."
+
+#: .\templates\crops\welcome.html:170
+msgid "Multi-language Support"
+msgstr "Multilingue"
+
+#: .\templates\crops\welcome.html:172
+msgid "Available in English, French, and Arabic. Switch languages seamlessly."
+msgstr "Disponible en anglais, français et arabe."
+
+#: .\templates\crops\welcome.html:184
+msgid "How It Works"
+msgstr "Fonctionnement"
+
+#: .\templates\crops\welcome.html:187
+msgid "Simple steps to get your crop recommendations"
+msgstr "Recommandations en 3 étapes simples"
+
+#: .\templates\crops\welcome.html:200
+msgid "Input Data"
+msgstr "Saisie des données"
+
+#: .\templates\crops\welcome.html:202
+msgid "Choose manual input or upload your soil test document"
+msgstr "Choisissez votre méthode de saisie"
+
+#: .\templates\crops\welcome.html:215
+msgid "AI Analysis"
+msgstr "Analyse IA"
+
+#: .\templates\crops\welcome.html:217
+msgid "Our machine learning algorithms analyze your data"
+msgstr "Nos algorithmes analysent vos données"
+
+#: .\templates\crops\welcome.html:230
+msgid "Get Results"
+msgstr "Résultats"
+
+#: .\templates\crops\welcome.html:232
+msgid "Receive detailed crop recommendations with confidence scores"
+msgstr "Recevez des recommandations détaillées avec scores de confiance"
+
+#: .\templates\crops\welcome.html:245
+msgid "Start Growing"
+msgstr "Commencez"
+
+#: .\templates\crops\welcome.html:247
+msgid "Implement the recommendations and track your results"
+msgstr "Mettez en œuvre et suivez vos résultats"
+
+#: .\templates\crops\welcome.html:261
+msgid "Ready to Start?"
+msgstr "Prêt à commencer ?"
+
+#: .\templates\crops\welcome.html:264
+msgid ""
+"Join thousands of farmers making smarter decisions with AI-powered crop "
+"recommendations."
+msgstr "Rejoignez des milliers d'agriculteurs qui utilisent nos recommandations IA."
+
+#: .\venv\Lib\site-packages\argparse.py:319
+msgid "usage: "
+msgstr "utilisation : "
+
+#: .\venv\Lib\site-packages\argparse.py:827
+msgid ".__call__() not defined"
+msgstr ".__call__() non défini"
+
+#: .\venv\Lib\site-packages\argparse.py:1122
+#, python-format
+msgid "unknown parser %r (choices: %s)"
+msgstr "analyseur inconnu %r (choix : %s)"
+
+#: .\venv\Lib\site-packages\argparse.py:1163
+#, python-format
+msgid "argument \"-\" with mode %r"
+msgstr "argument \"-\" avec mode %r"
+
+#: .\venv\Lib\site-packages\argparse.py:1174
+#, python-format
+msgid "can't open '%s': %s"
+msgstr "impossible d'ouvrir '%s' : %s"
+
+#: .\venv\Lib\site-packages\argparse.py:1371
+#, python-format
+msgid "cannot merge actions - two groups are named %r"
+msgstr "impossible de fusionner les actions - deux groupes sont nommés %r"
+
+#: .\venv\Lib\site-packages\argparse.py:1409
+msgid "'required' is an invalid argument for positionals"
+msgstr "'required' est un argument invalide pour les positionnels"
+
+#: .\venv\Lib\site-packages\argparse.py:1429
+#, python-format
+msgid "invalid option string %r: must start with a character %r"
+msgstr "chaîne d'option invalide %r : doit commencer par un caractère %r"
+
+#: .\venv\Lib\site-packages\argparse.py:1450
+#, python-format
+msgid "dest= is required for options like %r"
+msgstr "dest= est requis pour les options comme %r"
+
+#: .\venv\Lib\site-packages\argparse.py:1467
+#, python-format
+msgid "invalid conflict_resolution value: %r"
+msgstr "valeur de conflict_resolution invalide : %r"
+
+#: .\venv\Lib\site-packages\argparse.py:1485
+#, python-format
+msgid "conflicting option string(s): %s"
+msgstr "chaîne(s) d'option en conflit : %s"
+
+#: .\venv\Lib\site-packages\argparse.py:1548
+msgid "mutually exclusive arguments must be optional"
+msgstr "les arguments mutuellement exclusifs doivent être optionnels"
+
+#: .\venv\Lib\site-packages\argparse.py:1618
+msgid "positional arguments"
+msgstr "arguments positionnels"
+
+#: .\venv\Lib\site-packages\argparse.py:1619
+msgid "optional arguments"
+msgstr "arguments optionnels"
+
+#: .\venv\Lib\site-packages\argparse.py:1637
+msgid "show this help message and exit"
+msgstr "afficher ce message d'aide et quitter"
+
+#: .\venv\Lib\site-packages\argparse.py:1643
+msgid "show program's version number and exit"
+msgstr "afficher le numéro de version du programme et quitter"
+
+#: .\venv\Lib\site-packages\argparse.py:1675
+msgid "cannot have multiple subparser arguments"
+msgstr "impossible d'avoir plusieurs arguments de sous-analyseur"
+
+#: .\venv\Lib\site-packages\argparse.py:1727
+#, python-format
+msgid "unrecognized arguments: %s"
+msgstr "arguments non reconnus : %s"
+
+#: .\venv\Lib\site-packages\argparse.py:1821
+#, python-format
+msgid "not allowed with argument %s"
+msgstr "non autorisé avec l'argument %s"
+
+#: .\venv\Lib\site-packages\argparse.py:1867
+#: .\venv\Lib\site-packages\argparse.py:1881
+#, python-format
+msgid "ignored explicit argument %r"
+msgstr "argument explicite ignoré %r"
+
+#: .\venv\Lib\site-packages\argparse.py:1971
+msgid "too few arguments"
+msgstr "trop peu d'arguments"
+
+#: .\venv\Lib\site-packages\argparse.py:1978
+#, python-format
+msgid "argument %s is required"
+msgstr "l'argument %s est requis"
+
+#: .\venv\Lib\site-packages\argparse.py:2003
+#, python-format
+msgid "one of the arguments %s is required"
+msgstr "un des arguments %s est requis"
+
+#: .\venv\Lib\site-packages\argparse.py:2049
+msgid "expected one argument"
+msgstr "un argument attendu"
+
+#: .\venv\Lib\site-packages\argparse.py:2050
+msgid "expected at most one argument"
+msgstr "au plus un argument attendu"
+
+#: .\venv\Lib\site-packages\argparse.py:2051
+msgid "expected at least one argument"
+msgstr "au moins un argument attendu"
+
+#: .\venv\Lib\site-packages\argparse.py:2053
+#, python-format
+msgid "expected %s argument(s)"
+msgstr "%s argument(s) attendu(s)"
+
+#: .\venv\Lib\site-packages\argparse.py:2110
+#, python-format
+msgid "ambiguous option: %s could match %s"
+msgstr "option ambiguë : %s pourrait correspondre à %s"
+
+#: .\venv\Lib\site-packages\argparse.py:2172
+#, python-format
+msgid "unexpected option string: %s"
+msgstr "chaîne d'option inattendue : %s"
+
+#: .\venv\Lib\site-packages\argparse.py:2273
+#, python-format
+msgid "%r is not callable"
+msgstr "%r n'est pas appelable"
+
+#: .\venv\Lib\site-packages\argparse.py:2289
+#, python-format
+msgid "invalid %s value: %r"
+msgstr "valeur %s invalide : %r"
+
+#: .\venv\Lib\site-packages\argparse.py:2299
+#, python-format
+msgid "invalid choice: %r (choose from %s)"
+msgstr "choix invalide : %r (choisir parmi %s)"
+
+#: .\venv\Lib\site-packages\argparse.py:2392
+#, python-format
+msgid "%s: error: %s\n"
+msgstr "%s : erreur : %s\n"
+
+#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
+msgid "Messages"
+msgstr "Messages"
+
+#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr "Plans de Site"
+
+#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr "Fichiers Statiques"
+
+#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr "Syndication"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\venv\Lib\site-packages\django\core\paginator.py:30
+msgid "…"
+msgstr "…"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:32
+msgid "That page number is not an integer"
+msgstr "Ce numéro de page n'est pas un entier"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:33
+msgid "That page number is less than 1"
+msgstr "Ce numéro de page est inférieur à 1"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:34
+msgid "That page contains no results"
+msgstr "Cette page ne contient aucun résultat"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr "Entrez une valeur valide."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:70
+msgid "Enter a valid domain name."
+msgstr "Entrez un nom de domaine valide."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:153
+#: .\venv\Lib\site-packages\django\forms\fields.py:775
+msgid "Enter a valid URL."
+msgstr "Entrez une URL valide."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:200
+msgid "Enter a valid integer."
+msgstr "Entrez un entier valide."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:211
+msgid "Enter a valid email address."
+msgstr "Entrez une adresse email valide."
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\venv\Lib\site-packages\django\core\validators.py:289
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr "Entrez un slug valide : lettres, chiffres, tirets bas ou tirets."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:297
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr "Entrez un slug valide : caractères Unicode, chiffres, tirets bas ou tirets."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:309
+#: .\venv\Lib\site-packages\django\core\validators.py:318
+#: .\venv\Lib\site-packages\django\core\validators.py:332
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2220
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr "Entrez une adresse %(protocol)s valide."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:311
+msgid "IPv4"
+msgstr "IPv4"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:320
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:43
+msgid "IPv6"
+msgstr "IPv6"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:334
+msgid "IPv4 or IPv6"
+msgstr "IPv4 ou IPv6"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:375
+msgid "Enter only digits separated by commas."
+msgstr "Entrez uniquement des chiffres séparés par des virgules."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:381
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "Assurez-vous que cette valeur est %(limit_value)s (actuellement %(show_value)s)."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:416
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "Assurez-vous que cette valeur est inférieure ou égale à %(limit_value)s."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:425
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "Assurez-vous que cette valeur est supérieure ou égale à %(limit_value)s."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:434
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr "Assurez-vous que cette valeur est un multiple de %(limit_value)s."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:441
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr "Assurez-vous que cette valeur est un multiple de %(limit_value)s, à partir de %(offset)s, par ex. %(offset)s, %(valid_value1)s, %(valid_value2)s, etc."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:473
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] "Assurez-vous que cette valeur comporte au moins %(limit_value)d caractère (actuellement %(show_value)d)."
+msgstr[1] "Assurez-vous que cette valeur comporte au moins %(limit_value)d caractères (actuellement %(show_value)d)."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:491
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] "Assurez-vous que cette valeur comporte au plus %(limit_value)d caractère (actuellement %(show_value)d)."
+msgstr[1] "Assurez-vous que cette valeur comporte au plus %(limit_value)d caractères (actuellement %(show_value)d)."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:514
+#: .\venv\Lib\site-packages\django\forms\fields.py:366
+#: .\venv\Lib\site-packages\django\forms\fields.py:405
+msgid "Enter a number."
+msgstr "Entrez un nombre."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:516
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] "Assurez-vous qu'il n'y a pas plus de %(max)s chiffre au total."
+msgstr[1] "Assurez-vous qu'il n'y a pas plus de %(max)s chiffres au total."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:521
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] "Assurez-vous qu'il n'y a pas plus de %(max)s décimale."
+msgstr[1] "Assurez-vous qu'il n'y a pas plus de %(max)s décimales."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:526
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] "Assurez-vous qu'il n'y a pas plus de %(max)s chiffre avant la virgule."
+msgstr[1] "Assurez-vous qu'il n'y a pas plus de %(max)s chiffres avant la virgule."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:597
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr "L'extension de fichier \"%(extension)s\" n'est pas autorisée. Les extensions autorisées sont : %(allowed_extensions)s."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:659
+msgid "Null characters are not allowed."
+msgstr "Les caractères nuls ne sont pas autorisés."
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1600
+#: .\venv\Lib\site-packages\django\forms\models.py:908
+msgid "and"
+msgstr "et"
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1602
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "%(model_name)s avec %(field_labels)s existe déjà."
+
+#: .\venv\Lib\site-packages\django\db\models\constraints.py:22
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr "La contrainte \"%(name)s\" est violée."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "La valeur %(value)r n'est pas un choix valide."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
+msgid "This field cannot be null."
+msgstr "Ce champ ne peut pas être nul."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:136
+msgid "This field cannot be blank."
+msgstr "Ce champ ne peut pas être vide."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "%(model_name)s avec %(field_label)s existe déjà."
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr "%(field_label)s doit être unique pour %(date_field_label)s %(lookup_type)s."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "Champ de type : %(field_type)s"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1162
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr "La valeur \"%(value)s\" doit être True ou False."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1163
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "La valeur \"%(value)s\" doit être True, False ou None."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1165
+msgid "Boolean (Either True or False)"
+msgstr "Booléen (True ou False)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1215
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "Chaîne (jusqu'à %(max_length)s)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1217
+msgid "String (unlimited)"
+msgstr "Chaîne (illimité)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1326
+msgid "Comma-separated integers"
+msgstr "Entiers séparés par des virgules"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1427
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr "La valeur \"%(value)s\" a un format de date invalide. Elle doit être au format AAAA-MM-JJ."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1431
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1566
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr "La valeur \"%(value)s\" a le bon format (AAAA-MM-JJ) mais est une date invalide."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1435
+msgid "Date (without time)"
+msgstr "Date (sans heure)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1562
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr "La valeur \"%(value)s\" a un format invalide. Elle doit être au format AAAA-MM-JJ HH:MM[:ss[.uuuuuu]][TZ]."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1570
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr "La valeur \"%(value)s\" a le bon format (AAAA-MM-JJ HH:MM[:ss[.uuuuuu]][TZ]) mais est une date/heure invalide."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1575
+msgid "Date (with time)"
+msgstr "Date (avec heure)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1702
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr "La valeur \"%(value)s\" doit être un nombre décimal."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1704
+msgid "Decimal number"
+msgstr "Nombre décimal"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1864
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+msgstr "La valeur \"%(value)s\" a un format invalide. Elle doit être au format [JJ] [[HH:]MM:]ss[.uuuuuu]."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1868
+msgid "Duration"
+msgstr "Durée"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1920
+msgid "Email address"
+msgstr "Adresse email"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1945
+msgid "File path"
+msgstr "Chemin du fichier"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2023
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr "La valeur \"%(value)s\" doit être un nombre à virgule flottante."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2025
+msgid "Floating point number"
+msgstr "Nombre à virgule flottante"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2065
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr "La valeur \"%(value)s\" doit être un entier."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2067
+msgid "Integer"
+msgstr "Entier"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2163
+msgid "Big (8 byte) integer"
+msgstr "Grand entier (8 octets)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2180
+msgid "Small integer"
+msgstr "Petit entier"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2188
+msgid "IPv4 address"
+msgstr "Adresse IPv4"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2219
+msgid "IP address"
+msgstr "Adresse IP"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2310
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2311
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "La valeur \"%(value)s\" doit être None, True ou False."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2313
+msgid "Boolean (Either True, False or None)"
+msgstr "Booléen (True, False ou None)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2364
+msgid "Positive big integer"
+msgstr "Grand entier positif"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2379
+msgid "Positive integer"
+msgstr "Entier positif"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2394
+msgid "Positive small integer"
+msgstr "Petit entier positif"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2410
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr "Slug (jusqu'à %(max_length)s)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2446
+msgid "Text"
+msgstr "Texte"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2526
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr "La valeur \"%(value)s\" a un format invalide. Elle doit être au format HH:MM[:ss[.uuuuuu]]."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2530
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr "La valeur \"%(value)s\" a le bon format (HH:MM[:ss[.uuuuuu]]) mais est une heure invalide."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2534
+msgid "Time"
+msgstr "Heure"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2642
+msgid "URL"
+msgstr "URL"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2666
+msgid "Raw binary data"
+msgstr "Données binaires brutes"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2731
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr "\"%(value)s\" n'est pas un UUID valide."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2733
+msgid "Universally unique identifier"
+msgstr "Identifiant universel unique"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:244
+msgid "File"
+msgstr "Fichier"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:420
+msgid "Image"
+msgstr "Image"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:24
+msgid "A JSON object"
+msgstr "Un objet JSON"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
+msgid "Value must be valid JSON."
+msgstr "La valeur doit être un JSON valide."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:978
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
+msgstr "L'instance %(model)s avec %(field)s %(value)r n'est pas un choix valide."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:981
+msgid "Foreign Key (type determined by related field)"
+msgstr "Clé étrangère (type déterminé par le champ lié)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1275
+msgid "One-to-one relationship"
+msgstr "Relation un-à-un"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1332
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr "Relation %(from)s-%(to)s"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1334
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr "Relations %(from)s-%(to)s"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1382
+msgid "Many-to-many relationship"
+msgstr "Relation plusieurs-à-plusieurs"
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: .\venv\Lib\site-packages\django\forms\boundfield.py:185
+msgid ":?.!"
+msgstr ":?.!"
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:95
+msgid "This field is required."
+msgstr "Ce champ est obligatoire."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:315
+msgid "Enter a whole number."
+msgstr "Entrez un nombre entier."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:486
+#: .\venv\Lib\site-packages\django\forms\fields.py:1267
+msgid "Enter a valid date."
+msgstr "Entrez une date valide."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:509
+#: .\venv\Lib\site-packages\django\forms\fields.py:1268
+msgid "Enter a valid time."
+msgstr "Entrez une heure valide."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:536
+msgid "Enter a valid date/time."
+msgstr "Entrez une date/heure valide."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:570
+msgid "Enter a valid duration."
+msgstr "Entrez une durée valide."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:571
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr "Le nombre de jours doit être entre {min_days} et {max_days}."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:640
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr "Aucun fichier n'a été soumis. Vérifiez le type d'encodage du formulaire."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:641
+msgid "No file was submitted."
+msgstr "Aucun fichier n'a été soumis."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:642
+msgid "The submitted file is empty."
+msgstr "Le fichier soumis est vide."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:644
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] "Assurez-vous que ce nom de fichier comporte au plus %(max)d caractère (actuellement %(length)d)."
+msgstr[1] "Assurez-vous que ce nom de fichier comporte au plus %(max)d caractères (actuellement %(length)d)."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:649
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr "Veuillez soit soumettre un fichier, soit cocher la case de suppression, pas les deux."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:717
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr "Téléversez une image valide. Le fichier que vous avez téléversé n'est pas une image ou est corrompu."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:889
+#: .\venv\Lib\site-packages\django\forms\fields.py:975
+#: .\venv\Lib\site-packages\django\forms\models.py:1592
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr "Sélectionnez un choix valide. %(value)s ne fait pas partie des choix disponibles."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:977
+#: .\venv\Lib\site-packages\django\forms\fields.py:1096
+#: .\venv\Lib\site-packages\django\forms\models.py:1590
+msgid "Enter a list of values."
+msgstr "Entrez une liste de valeurs."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1097
+msgid "Enter a complete value."
+msgstr "Entrez une valeur complète."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1339
+msgid "Enter a valid UUID."
+msgstr "Entrez un UUID valide."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1369
+msgid "Enter a valid JSON."
+msgstr "Entrez un JSON valide."
+
+#. Translators: This is the default suffix added to form field labels
+#: .\venv\Lib\site-packages\django\forms\forms.py:97
+msgid ":"
+msgstr ":"
+
+#: .\venv\Lib\site-packages\django\forms\forms.py:239
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr "(Champ caché %(name)s) %(error)s"
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr "Les données du ManagementForm sont manquantes ou ont été altérées. Champs manquants : %(field_names)s. Vous devrez peut-être signaler un bogue si le problème persiste."
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] "Veuillez soumettre au plus %(num)d formulaire."
+msgstr[1] "Veuillez soumettre au plus %(num)d formulaires."
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] "Veuillez soumettre au moins %(num)d formulaire."
+msgstr[1] "Veuillez soumettre au moins %(num)d formulaires."
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:484
+#: .\venv\Lib\site-packages\django\forms\formsets.py:491
+msgid "Order"
+msgstr "Ordre"
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:499
+msgid "Delete"
+msgstr "Supprimer"
+
+#: .\venv\Lib\site-packages\django\forms\models.py:901
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr "Veuillez corriger les données en double pour %(field)s."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:906
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr "Veuillez corriger les données en double pour %(field)s, qui doit être unique."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:913
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr "Veuillez corriger les données en double pour %(field_name)s qui doit être unique pour %(lookup)s dans %(date_field)s."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:922
+msgid "Please correct the duplicate values below."
+msgstr "Veuillez corriger les valeurs en double ci-dessous."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1359
+msgid "The inline value did not match the parent instance."
+msgstr "La valeur en ligne ne correspond pas à l'instance parente."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1450
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr "Sélectionnez un choix valide. Ce choix ne fait pas partie des choix disponibles."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1594
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr "\"%(pk)s\" n'est pas une valeur valide."
+
+#: .\venv\Lib\site-packages\django\forms\utils.py:229
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr "%(datetime)s n'a pas pu être interprété dans le fuseau horaire %(current_timezone)s ; il peut être ambigu ou ne pas exister."
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:527
+msgid "Clear"
+msgstr "Effacer"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:528
+msgid "Currently"
+msgstr "Actuellement"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:529
+msgid "Change"
+msgstr "Modifier"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:866
+msgid "Unknown"
+msgstr "Inconnu"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:867
+msgid "Yes"
+msgstr "Oui"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:868
+msgid "No"
+msgstr "Non"
+
+#. Translators: Please do not add spaces around commas.
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:873
+msgid "yes,no,maybe"
+msgstr "oui,non,peut-être"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:903
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:920
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] "%(size)d octet"
+msgstr[1] "%(size)d octets"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:922
+#, python-format
+msgid "%s KB"
+msgstr "%s Ko"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:924
+#, python-format
+msgid "%s MB"
+msgstr "%s Mo"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:926
+#, python-format
+msgid "%s GB"
+msgstr "%s Go"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:928
+#, python-format
+msgid "%s TB"
+msgstr "%s To"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:930
+#, python-format
+msgid "%s PB"
+msgstr "%s Po"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:74
+msgid "p.m."
+msgstr "p.m."
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:75
+msgid "a.m."
+msgstr "a.m."
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:80
+msgid "PM"
+msgstr "PM"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:81
+msgid "AM"
+msgstr "AM"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:153
+msgid "midnight"
+msgstr "minuit"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:155
+msgid "noon"
+msgstr "midi"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:7
+msgid "Monday"
+msgstr "Lundi"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:8
+msgid "Tuesday"
+msgstr "Mardi"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:9
+msgid "Wednesday"
+msgstr "Mercredi"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Thursday"
+msgstr "Jeudi"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:11
+msgid "Friday"
+msgstr "Vendredi"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:12
+msgid "Saturday"
+msgstr "Samedi"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:13
+msgid "Sunday"
+msgstr "Dimanche"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:16
+msgid "Mon"
+msgstr "Lun"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:17
+msgid "Tue"
+msgstr "Mar"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:18
+msgid "Wed"
+msgstr "Mer"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "Thu"
+msgstr "Jeu"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "Fri"
+msgstr "Ven"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:21
+msgid "Sat"
+msgstr "Sam"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:22
+msgid "Sun"
+msgstr "Dim"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:25
+msgid "January"
+msgstr "Janvier"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:26
+msgid "February"
+msgstr "Février"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:27
+msgid "March"
+msgstr "Mars"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:28
+msgid "April"
+msgstr "Avril"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:29
+msgid "May"
+msgstr "Mai"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:30
+msgid "June"
+msgstr "Juin"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:31
+msgid "July"
+msgstr "Juillet"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:32
+msgid "August"
+msgstr "Août"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:33
+msgid "September"
+msgstr "Septembre"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:34
+msgid "October"
+msgstr "Octobre"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:35
+msgid "November"
+msgstr "Novembre"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:36
+msgid "December"
+msgstr "Décembre"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:39
+msgid "jan"
+msgstr "jan"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:40
+msgid "feb"
+msgstr "fév"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:41
+msgid "mar"
+msgstr "mar"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:42
+msgid "apr"
+msgstr "avr"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:43
+msgid "may"
+msgstr "mai"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:44
+msgid "jun"
+msgstr "jun"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:45
+msgid "jul"
+msgstr "jul"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:46
+msgid "aug"
+msgstr "aoû"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:47
+msgid "sep"
+msgstr "sep"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:48
+msgid "oct"
+msgstr "oct"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:49
+msgid "nov"
+msgstr "nov"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:50
+msgid "dec"
+msgstr "déc"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr "Janv."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr "Févr."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "Mars"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr "Avril"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr "Mai"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr "Juin"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr "Juillet"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr "Août"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr "Sept."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr "Oct."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr "Nov."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr "Déc."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr "Janvier"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr "Février"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr "Mars"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr "Avril"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr "Mai"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr "Juin"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr "Juillet"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr "Août"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr "Septembre"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr "Octobre"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr "Novembre"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr "Décembre"
+
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:20
+msgid "This is not a valid IPv6 address."
+msgstr "Ceci n'est pas une adresse IPv6 valide."
+
+#: .\venv\Lib\site-packages\django\utils\text.py:76
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr "%(truncated_text)s…"
+
+#: .\venv\Lib\site-packages\django\utils\text.py:287
+msgid "or"
+msgstr "ou"
+
+#. Translators: This string is used as a separator between list elements
+#: .\venv\Lib\site-packages\django\utils\text.py:306
+#: .\venv\Lib\site-packages\django\utils\timesince.py:135
+msgid ", "
+msgstr ", "
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] "%(num)d an"
+msgstr[1] "%(num)d ans"
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] "%(num)d mois"
+msgstr[1] "%(num)d mois"
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] "%(num)d semaine"
+msgstr[1] "%(num)d semaines"
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] "%(num)d jour"
+msgstr[1] "%(num)d jours"
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] "%(num)d heure"
+msgstr[1] "%(num)d heures"
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] "%(num)d minute"
+msgstr[1] "%(num)d minutes"
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:29
+msgid "Forbidden"
+msgstr "Interdit"
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr "Vérification CSRF échouée. Requête abandonnée."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr "Vous voyez ce message car ce site HTTPS nécessite l'envoi d'un en-tête \"Referer\" par votre navigateur, mais aucun n'a été envoyé. Cet en-tête est requis pour des raisons de sécurité, afin de s'assurer que votre navigateur n'est pas détourné par des tiers."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr "Si vous avez configuré votre navigateur pour désactiver les en-têtes \"Referer\", veuillez les réactiver, au moins pour ce site, ou pour les connexions HTTPS, ou pour les requêtes \"same-origin\"."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr "Si vous utilisez la balise <meta name=\"referrer\" content=\"no-referrer\"> ou l'en-tête \"Referrer-Policy: no-referrer\", veuillez les supprimer. La protection CSRF nécessite l'en-tête \"Referer\" pour effectuer une vérification stricte du référent. Si vous êtes soucieux de la confidentialité, utilisez des alternatives comme <a rel=\"noreferrer\" …> pour les liens vers des sites tiers."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr "Vous voyez ce message car ce site nécessite un cookie CSRF lors de la soumission de formulaires. Ce cookie est requis pour des raisons de sécurité, afin de s'assurer que votre navigateur n'est pas détourné par des tiers."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr "Si vous avez configuré votre navigateur pour désactiver les cookies, veuillez les réactiver, au moins pour ce site, ou pour les requêtes \"same-origin\"."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr "Plus d'informations sont disponibles avec DEBUG=True."
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:44
+msgid "No year specified"
+msgstr "Aucune année spécifiée"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:64
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:115
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:214
+msgid "Date out of range"
+msgstr "Date hors limites"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:94
+msgid "No month specified"
+msgstr "Aucun mois spécifié"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:147
+msgid "No day specified"
+msgstr "Aucun jour spécifié"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:194
+msgid "No week specified"
+msgstr "Aucune semaine spécifiée"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:353
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:384
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr "Aucun(e) %(verbose_name_plural)s disponible"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:680
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+msgstr "%(verbose_name_plural)s futurs non disponibles car %(class_name)s.allow_future est False."
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:720
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr "Chaîne de date \"%(datestr)s\" invalide pour le format \"%(format)s\""
+
+#: .\venv\Lib\site-packages\django\views\generic\detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "Aucun(e) %(verbose_name)s trouvé(e) correspondant à la requête"
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr "La page n'est pas \"last\" et ne peut pas être convertie en entier."
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr "Page invalide (%(page_number)s) : %(message)s"
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:173
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr "Liste vide et \"%(class_name)s.allow_empty\" est False."
+
+#: .\venv\Lib\site-packages\django\views\static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr "Les index de répertoire ne sont pas autorisés ici."
+
+#: .\venv\Lib\site-packages\django\views\static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr "\"%(path)s\" n'existe pas"
+
+#: .\venv\Lib\site-packages\django\views\static.py:68
+#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:8
+#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr "Index de %(directory)s"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr "L'installation a réussi ! Félicitations !"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr "Voir les <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" target=\"_blank\" rel=\"noopener\">notes de version</a> pour Django %(version)s"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr "Vous voyez cette page car <a href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener\">DEBUG=True</a> est dans votre fichier de paramètres et vous n'avez configuré aucune URL."
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:217
+msgid "Django Documentation"
+msgstr "Documentation Django"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr "Sujets, références et guides pratiques"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr "Tutoriel : Une application de sondage"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:227
+msgid "Get started with Django"
+msgstr "Commencer avec Django"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:235
+msgid "Django Community"
+msgstr "Communauté Django"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr "Connectez-vous, obtenez de l'aide ou contribuez"
+
+# Crops Section
+msgid "rice"
+msgstr "riz"
+
+msgid "maize"
+msgstr "maïs"
+
+msgid "chickpea"
+msgstr "pois chiche"
+
+msgid "kidneybeans"
+msgstr "haricots rouges"
+
+msgid "pigeonpeas"
+msgstr "pois d'Angole"
+
+msgid "mothbeans"
+msgstr "haricot papillon"
+
+msgid "mungbean"
+msgstr "haricot mungo"
+
+msgid "blackgram"
+msgstr "haricot urd"
+
+msgid "lentil"
+msgstr "lentille"
+
+msgid "pomegranate"
+msgstr "grenade"
+
+msgid "banana"
+msgstr "banane"
+
+msgid "mango"
+msgstr "mangue"
+
+msgid "grapes"
+msgstr "raisins"
+
+msgid "watermelon"
+msgstr "pastèque"
+
+msgid "muskmelon"
+msgstr "melon"
+
+msgid "apple"
+msgstr "pomme"
+
+msgid "orange"
+msgstr "orange"
+
+msgid "papaya"
+msgstr "papaye"
+
+msgid "coconut"
+msgstr "noix de coco"
+
+msgid "cotton"
+msgstr "coton"
+
+msgid "jute"
+msgstr "jute"
+
+msgid "coffee"
+msgstr "café"

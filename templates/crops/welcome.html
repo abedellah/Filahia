@@ -1,0 +1,447 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}{% trans "Welcome to Crop Advisor" %}{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section mb-5">
+    <div class="card p-5 text-center">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <h1 class="display-4 fw-bold text-primary mb-3">
+                        {% trans "Welcome to Crop Advisor" %}
+                    </h1>
+                    <p class="lead text-muted mb-4">
+                        {% trans "Harness the power of artificial intelligence to make informed agricultural decisions. Get personalized crop recommendations based on your soil and climate conditions." %}
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="hero-visual">
+                    <div class="position-relative">
+                        <div class="bg-success bg-opacity-10 rounded-circle p-5 d-inline-block">
+                            <i class="fas fa-brain text-success" style="font-size: 8rem;"></i>
+                        </div>
+                        <div class="position-absolute top-0 start-0 animate-float">
+                            <i class="fas fa-leaf text-success opacity-50" style="font-size: 2rem;"></i>
+                        </div>
+                        <div class="position-absolute bottom-0 end-0 animate-float-delayed">
+                            <i class="fas fa-seedling text-primary opacity-50" style="font-size: 1.5rem;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Choose Your Method Section -->
+<section class="method-selection mb-5">
+    <div class="text-center mb-4">
+        <h2 class="h1 fw-bold text-primary mb-3">
+            {% trans "Choose Your Method" %}
+        </h2>
+        <p class="lead text-muted">
+            {% trans "Select how you want to input your agricultural data" %}
+        </p>
+    </div>
+    
+    <div class="row g-4">
+        <!-- Manual Input Option -->
+        <div class="col-lg-6">
+            <div class="card h-100 text-center option-card">
+                <div class="card-body p-4">
+                    <div class="option-icon mb-3">
+                        <i class="fas fa-edit text-primary" style="font-size: 4rem;"></i>
+                    </div>
+                    <h3 class="h4 fw-bold mb-3">{% trans "Manual Input" %}</h3>
+                    <p class="text-muted mb-4">
+                        {% trans "Enter your soil and climate parameters manually using our intuitive form. Perfect when you have specific test results." %}
+                    </p>
+                    <ul class="list-unstyled text-start mb-4">
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success me-2"></i>
+                            {% trans "NPK levels (Nitrogen, Phosphorus, Potassium)" %}
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success me-2"></i>
+                            {% trans "Soil pH level" %}
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success me-2"></i>
+                            {% trans "Temperature and humidity data" %}
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success me-2"></i>
+                            {% trans "Annual rainfall information" %}
+                        </li>
+                    </ul>
+                    <a href="{% url 'crops:index' %}" class="btn btn-primary btn-lg w-100">
+                        <i class="fas fa-keyboard me-2"></i>
+                        {% trans "Start Manual Input" %}
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- OCR Upload Option -->
+        <div class="col-lg-6">
+            <div class="card h-100 text-center option-card">
+                <div class="card-body p-4">
+                    <div class="option-icon mb-3">
+                        <i class="fas fa-camera text-success" style="font-size: 4rem;"></i>
+                    </div>
+                    <h3 class="h4 fw-bold mb-3">{% trans "Upload Document" %}</h3>
+                    <p class="text-muted mb-4">
+                        {% trans "Upload your soil test report or agricultural document and let our AI extract the data automatically." %}
+                    </p>
+                    <ul class="list-unstyled text-start mb-4">
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success me-2"></i>
+                            {% trans "PDF, JPG, PNG formats supported" %}
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success me-2"></i>
+                            {% trans "Multi-language OCR (EN, FR, AR)" %}
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success me-2"></i>
+                            {% trans "Automatic data extraction" %}
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success me-2"></i>
+                            {% trans "Fast and accurate processing" %}
+                        </li>
+                    </ul>
+                    <a href="{% url 'crops:ocr_upload' %}" class="btn btn-success btn-lg w-100">
+                        <i class="fas fa-upload me-2"></i>
+                        {% trans "Upload Document" %}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section mb-5">
+    <div class="text-center mb-5">
+        <h2 class="h1 fw-bold text-primary mb-3">
+            {% trans "Why Choose Our Platform?" %}
+        </h2>
+        <p class="lead text-muted">
+            {% trans "Discover the features that make our system unique" %}
+        </p>
+    </div>
+    
+    <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+            <div class="card feature-card p-4 h-100 text-center">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-chart-line text-success" style="font-size: 3rem;"></i>
+                </div>
+                <h4 class="h5 fw-bold mb-3">{% trans "High Accuracy" %}</h4>
+                <p class="text-muted">
+                    {% trans "Our machine learning models are trained on extensive agricultural datasets, providing reliable crop recommendations." %}
+                </p>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+            <div class="card feature-card p-4 h-100 text-center">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-tachometer-alt text-primary" style="font-size: 3rem;"></i>
+                </div>
+                <h4 class="h5 fw-bold mb-3">{% trans "Instant Results" %}</h4>
+                <p class="text-muted">
+                    {% trans "Get crop recommendations instantly. Our optimized algorithms process your data in seconds." %}
+                </p>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+            <div class="card feature-card p-4 h-100 text-center">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-globe text-info" style="font-size: 3rem;"></i>
+                </div>
+                <h4 class="h5 fw-bold mb-3">{% trans "Multi-language Support" %}</h4>
+                <p class="text-muted">
+                    {% trans "Available in English, French, and Arabic. Switch languages seamlessly." %}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works mb-5">
+    <div class="card p-5">
+        <div class="text-center mb-5">
+            <h2 class="h1 fw-bold text-primary mb-3">
+                {% trans "How It Works" %}
+            </h2>
+            <p class="lead text-muted">
+                {% trans "Simple steps to get your crop recommendations" %}
+            </p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="step-item">
+                    <div class="step-number mb-3">
+                        <span class="badge bg-primary rounded-circle p-3" style="font-size: 1.2rem;">1</span>
+                    </div>
+                    <div class="step-icon mb-3">
+                        <i class="fas fa-edit text-primary" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5 class="fw-bold">{% trans "Input Data" %}</h5>
+                    <p class="text-muted small">
+                        {% trans "Choose manual input or upload your soil test document" %}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="step-item">
+                    <div class="step-number mb-3">
+                        <span class="badge bg-success rounded-circle p-3" style="font-size: 1.2rem;">2</span>
+                    </div>
+                    <div class="step-icon mb-3">
+                        <i class="fas fa-brain text-success" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5 class="fw-bold">{% trans "AI Analysis" %}</h5>
+                    <p class="text-muted small">
+                        {% trans "Our machine learning algorithms analyze your data" %}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="step-item">
+                    <div class="step-number mb-3">
+                        <span class="badge bg-info rounded-circle p-3" style="font-size: 1.2rem;">3</span>
+                    </div>
+                    <div class="step-icon mb-3">
+                        <i class="fas fa-chart-bar text-info" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5 class="fw-bold">{% trans "Get Results" %}</h5>
+                    <p class="text-muted small">
+                        {% trans "Receive detailed crop recommendations with confidence scores" %}
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="step-item">
+                    <div class="step-number mb-3">
+                        <span class="badge bg-warning rounded-circle p-3" style="font-size: 1.2rem;">4</span>
+                    </div>
+                    <div class="step-icon mb-3">
+                        <i class="fas fa-seedling text-warning" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5 class="fw-bold">{% trans "Start Growing" %}</h5>
+                    <p class="text-muted small">
+                        {% trans "Implement the recommendations and track your results" %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section mb-5">
+    <div class="card bg-primary text-white text-center p-5">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h3 class="h2 fw-bold mb-3">
+                    {% trans "Ready to Start?" %}
+                </h3>
+                <p class="lead mb-0">
+                    {% trans "Join thousands of farmers making smarter decisions with AI-powered crop recommendations." %}
+                </p>
+            </div>
+            <div class="col-lg-4 mt-3 mt-lg-0">
+                <a href="{% url 'crops:index' %}" class="btn btn-light btn-lg me-2 mb-2">
+                    <i class="fas fa-keyboard me-2"></i>
+                    {% trans "Manual Input" %}
+                </a>
+                <a href="{% url 'crops:ocr_upload' %}" class="btn btn-success btn-lg mb-2">
+                    <i class="fas fa-upload me-2"></i>
+                    {% trans "Upload Document" %}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .hero-section {
+        margin-top: 2rem;
+    }
+    
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+    
+    .animate-float-delayed {
+        animation: float 3s ease-in-out infinite 1.5s;
+    }
+    
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+    
+    .option-card {
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+    }
+    
+    .option-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border-color: var(--bs-primary);
+    }
+    
+    .step-item {
+        position: relative;
+        padding: 1rem;
+        transition: transform 0.3s ease;
+    }
+    
+    .step-item:hover {
+        transform: translateY(-5px);
+    }
+    
+    .step-number {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .feature-icon {
+        transition: transform 0.3s ease;
+    }
+    
+    .feature-card {
+        transition: all 0.3s ease;
+        border: 1px solid rgba(0,0,0,0.125);
+    }
+    
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    
+    .feature-card:hover .feature-icon {
+        transform: scale(1.1);
+    }
+    
+    .hero-visual {
+        position: relative;
+    }
+    
+    .option-icon {
+        transition: transform 0.3s ease;
+    }
+    
+    .option-card:hover .option-icon {
+        transform: scale(1.1);
+    }
+    
+    .cta-section .card {
+        background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-primary) 100%);
+        border: none;
+    }
+    
+    .step-icon {
+        transition: transform 0.3s ease;
+    }
+    
+    .step-item:hover .step-icon {
+        transform: scale(1.1);
+    }
+    
+    /* Enhanced responsiveness */
+    @media (max-width: 768px) {
+        .display-4 {
+            font-size: 2rem;
+        }
+        
+        .lead {
+            font-size: 1rem;
+        }
+        
+        .hero-visual i {
+            font-size: 4rem !important;
+        }
+        
+        .option-icon i,
+        .feature-icon i {
+            font-size: 2.5rem !important;
+        }
+        
+        .step-icon i {
+            font-size: 2rem !important;
+        }
+        
+        .cta-section .btn {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-body {
+            padding: 2rem 1rem;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .hero-section .card,
+        .how-it-works .card,
+        .cta-section .card {
+            padding: 2rem 1rem;
+        }
+        
+        .display-4 {
+            font-size: 1.75rem;
+        }
+        
+        .h1 {
+            font-size: 1.5rem;
+        }
+    }
+    
+    /* Accessibility improvements */
+    .btn:focus,
+    .card:focus {
+        outline: 2px solid var(--bs-primary);
+        outline-offset: 2px;
+    }
+    
+    /* Print styles */
+    @media print {
+        .animate-float,
+        .animate-float-delayed {
+            animation: none;
+        }
+        
+        .btn {
+            display: none;
+        }
+        
+        .card {
+            border: 1px solid #000;
+            box-shadow: none;
+        }
+    }
+</style>
+{% endblock %}

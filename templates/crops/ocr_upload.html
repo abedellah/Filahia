@@ -1,0 +1,319 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "OCR Document Upload" %}{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <!-- OCR Upload Section -->
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h4 class="mb-0">
+                            <i class="fas fa-camera me-2"></i>
+                            {% trans "Extract Data from Image/Document" %}
+                        </h4>
+                    </div>
+                    <div class="col-auto">
+                        <a href="{% url 'crops:index' %}" class="btn btn-light btn-sm">
+                            <i class="fas fa-arrow-left me-1"></i>
+                            {% trans "Back to Home" %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <p class="text-muted mb-4">
+                    {% trans "Upload an image or document containing soil test results, and we'll extract the data automatically using OCR technology." %}
+                </p>
+                
+                <!-- Display form errors -->
+                {% if form.non_field_errors %}
+                    <div class="alert alert-danger">
+                        {{ form.non_field_errors }}
+                    </div>
+                {% endif %}
+                
+                <form method="post" action="{% url 'crops:ocr_upload' %}" enctype="multipart/form-data" id="ocrForm">
+                    {% csrf_token %}
+                    
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="mb-3">
+                                <label for="{{ form.file.id_for_label }}" class="form-label fw-bold">
+                                    <i class="fas fa-file-upload me-2"></i>
+                                    {{ form.file.label }}
+                                </label>
+                                {{ form.file }}
+                                <div class="form-text">
+                                    {% trans "Supported formats: JPG, PNG, PDF, TXT. Maximum file size: 10MB" %}
+                                </div>
+                                {% if form.file.errors %}
+                                    <div class="text-danger small">
+                                        {% for error in form.file.errors %}
+                                            <div>{{ error }}</div>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="{{ form.ocr_language.id_for_label }}" class="form-label fw-bold">
+                                    <i class="fas fa-language me-2"></i>
+                                    {{ form.ocr_language.label }}
+                                </label>
+                                {{ form.ocr_language }}
+                                <div class="form-text">
+                                    {% trans "Auto-detect recommended" %}
+                                </div>
+                                {% if form.ocr_language.errors %}
+                                    <div class="text-danger small">
+                                        {% for error in form.ocr_language.errors %}
+                                            <div>{{ error }}</div>
+                                        {% endfor %}
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- File preview area -->
+                    <div id="filePreview" class="mb-3" style="display: none;">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h6 class="card-title">
+                                    <i class="fas fa-eye me-2"></i>
+                                    {% trans "File Preview" %}
+                                </h6>
+                                <div id="previewContent"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success btn-lg px-5" id="ocrBtn">
+                            <i class="fas fa-upload me-2"></i>
+                            {% trans "Upload & Extract Data" %}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Processing Status -->
+        <div id="processingStatus" class="card mb-4" style="display: none;">
+            <div class="card-body text-center">
+                <div class="spinner-border text-success mb-3" role="status">
+                    <span class="visually-hidden">{% trans "Processing..." %}</span>
+                </div>
+                <h5>{% trans "Processing your document..." %}</h5>
+                <p class="text-muted">{% trans "This may take a few moments depending on the file size and complexity." %}</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sidebar with Tips -->
+    <div class="col-lg-4">
+        <!-- Tips Card -->
+        <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+                <h6 class="mb-0">
+                    <i class="fas fa-lightbulb me-2"></i>
+                    {% trans "OCR Tips" %}
+                </h6>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>
+                        <small>{% trans "Use high-resolution, clear images" %}</small>
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>
+                        <small>{% trans "Ensure good lighting and contrast" %}</small>
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>
+                        <small>{% trans "Avoid blurry or skewed images" %}</small>
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-check text-success me-2"></i>
+                        <small>{% trans "Include parameter names (N, P, K, pH, etc.)" %}</small>
+                    </li>
+                    <li>
+                        <i class="fas fa-check text-success me-2"></i>
+                        <small>{% trans "Multiple languages supported" %}</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Supported Parameters -->
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h6 class="mb-0">
+                    <i class="fas fa-list me-2"></i>
+                    {% trans "Detected Parameters" %}
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6">
+                        <h6 class="text-primary">{% trans "Soil" %}</h6>
+                        <ul class="list-unstyled small">
+                            <li><i class="fas fa-leaf me-1 text-success"></i> {% trans "Nitrogen (N)" %}</li>
+                            <li><i class="fas fa-leaf me-1 text-success"></i> {% trans "Phosphorus (P)" %}</li>
+                            <li><i class="fas fa-leaf me-1 text-success"></i> {% trans "Potassium (K)" %}</li>
+                            <li><i class="fas fa-leaf me-1 text-success"></i> {% trans "pH Level" %}</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <h6 class="text-info">{% trans "Climate" %}</h6>
+                        <ul class="list-unstyled small">
+                            <li><i class="fas fa-thermometer-half me-1 text-warning"></i> {% trans "Temperature" %}</li>
+                            <li><i class="fas fa-tint me-1 text-info"></i> {% trans "Humidity" %}</li>
+                            <li><i class="fas fa-cloud-rain me-1 text-primary"></i> {% trans "Rainfall" %}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Example formats -->
+        <div class="card">
+            <div class="card-header bg-secondary text-white">
+                <h6 class="mb-0">
+                    <i class="fas fa-file-alt me-2"></i>
+                    {% trans "Example Formats" %}
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="small">
+                    <div class="mb-2">
+                        <strong>{% trans "Text format:" %}</strong><br>
+                        <code class="text-muted">
+                            N: 85, P: 58, K: 41<br>
+                            pH: 6.5, Temp: 25°C
+                        </code>
+                    </div>
+                    <div class="mb-2">
+                        <strong>{% trans "Table format:" %}</strong><br>
+                        <code class="text-muted">
+                            Nitrogen | 85 ppm<br>
+                            Phosphorus | 58 ppm
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const ocrForm = document.getElementById('ocrForm');
+    const ocrBtn = document.getElementById('ocrBtn');
+    const fileInput = document.querySelector('input[type="file"]');
+    const filePreview = document.getElementById('filePreview');
+    const previewContent = document.getElementById('previewContent');
+    const processingStatus = document.getElementById('processingStatus');
+    
+    // File input change handler
+    if (fileInput) {
+        fileInput.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                // Validate file type
+                const validTypes = ['image/jpeg', 'image/png', 'application/pdf', 'text/plain'];
+                if (!validTypes.includes(file.type)) {
+                    alert('{% trans "Please select a valid file type (JPG, PNG, PDF, or TXT)" %}');
+                    this.value = '';
+                    filePreview.style.display = 'none';
+                    return;
+                }
+                
+                // Validate file size (10MB max)
+                const maxSize = 10 * 1024 * 1024; // 10MB in bytes
+                if (file.size > maxSize) {
+                    alert('{% trans "File size must be less than 10MB" %}');
+                    this.value = '';
+                    filePreview.style.display = 'none';
+                    return;
+                }
+                
+                // Show file preview
+                showFilePreview(file);
+            } else {
+                filePreview.style.display = 'none';
+            }
+        });
+    }
+    
+    // Form submission handler
+    if (ocrForm) {
+        ocrForm.addEventListener('submit', function(e) {
+            // Show processing status
+            processingStatus.style.display = 'block';
+            
+            // Update button state
+            ocrBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>{% trans "Processing..." %}';
+            ocrBtn.disabled = true;
+            
+            // Scroll to processing status
+            processingStatus.scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+    
+    function showFilePreview(file) {
+        const fileName = file.name;
+        const fileSize = (file.size / 1024 / 1024).toFixed(2); // Size in MB
+        const fileType = file.type;
+        
+        let previewHTML = `
+            <div class="d-flex align-items-center">
+                <div class="me-3">
+                    <i class="fas fa-file text-primary" style="font-size: 2rem;"></i>
+                </div>
+                <div>
+                    <div class="fw-bold">${fileName}</div>
+                    <div class="text-muted small">
+                        {% trans "Size:" %} ${fileSize} MB | {% trans "Type:" %} ${fileType}
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        // If it's an image, show thumbnail
+        if (file.type.startsWith('image/')) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                previewHTML = `
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <img src="${e.target.result}" alt="Preview" class="img-thumbnail" style="max-width: 100px; max-height: 100px;">
+                        </div>
+                        <div class="col">
+                            <div class="fw-bold">${fileName}</div>
+                            <div class="text-muted small">
+                                {% trans "Size:" %} ${fileSize} MB | {% trans "Type:" %} ${fileType}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                previewContent.innerHTML = previewHTML;
+            };
+            reader.readAsDataURL(file);
+        } else {
+            previewContent.innerHTML = previewHTML;
+        }
+        
+        filePreview.style.display = 'block';
+    }
+});
+</script>
+{% endblock %}
