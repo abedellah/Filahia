@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Filahia, crop recommendation from soil and climate data" width="100%">
+  <img src="assets/banner.svg?v=2" alt="Filahia, crop recommendation from soil and climate data" width="100%">
 </p>
 
 # Filahia
