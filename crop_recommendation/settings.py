@@ -84,5 +84,8 @@ LOCALE_PATHS = [
 ]
 
 # OCR Configuration
-TESSERACT_CMD = r'/usr/bin/tesseract'  # Change this path if needed
+# Chemin de Tesseract : variable TESSERACT_CMD, sinon l'exécutable trouvé dans le PATH,
+# sinon l'emplacement Linux habituel.
+import shutil
+TESSERACT_CMD = os.environ.get('TESSERACT_CMD') or shutil.which('tesseract') or '/usr/bin/tesseract'
 OCR_LANGUAGES = ['eng', 'fra', 'ara']

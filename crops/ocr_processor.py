@@ -134,27 +134,27 @@ class OCRProcessor:
             'rainfall': None
         }
         
-        # Define patterns for different languages
-        patterns = self._get_extraction_patterns(language)
-        
-        # Clean and normalize text
-        text = self._normalize_text(text, language)
-        
-        # Extract values using patterns
-        for field, field_patterns in patterns.items():
-            for pattern in field_patterns:
-                matches = re.finditer(pattern, text, re.IGNORECASE | re.MULTILINE)
-                for match in matches:
-                    try:
-                        value = float(match.group(1))
+        # La détection de langue est peu fiable sur un texte court et surtout numérique :
+        # on essaie d'abord la langue détectée, puis les autres pour les champs restants.
+        languages = [language] + [lang for lang in ('en', 'fr', 'ar') if lang != language]
+        for lang in languages:
+            patterns = self._get_extraction_patterns(lang)
+            normalized = self._normalize_text(text, lang)
+            for field, field_patterns in patterns.items():
+                if extracted_data[field] is not None:
+                    continue
+                for pattern in field_patterns:
+                    for match in re.finditer(pattern, normalized, re.IGNORECASE | re.MULTILINE):
+                        try:
+                            value = float(match.group(1))
+                        except (ValueError, IndexError):
+                            continue
                         if self._validate_value(field, value):
                             extracted_data[field] = value
                             break
-                    except (ValueError, IndexError):
-                        continue
-                if extracted_data[field] is not None:
-                    break
-        
+                    if extracted_data[field] is not None:
+                        break
+
         return extracted_data
     
     def _get_extraction_patterns(self, language):
