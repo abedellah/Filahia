@@ -1,11 +1,14 @@
 import os
+import secrets
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'dev-only-insecure-key')
-DEBUG = True
-ALLOWED_HOSTS = []
+# Sécurisé par défaut : le mode debug se règle par variable d'environnement (DJANGO_DEBUG=1).
+DEBUG = os.environ.get('DJANGO_DEBUG', '0') == '1'
+# Sans clé fournie, une clé aléatoire est générée à chaque démarrage (les sessions ne survivent pas à un redémarrage).
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY') or ('dev-only-insecure-key' if DEBUG else secrets.token_urlsafe(50))
+ALLOWED_HOSTS = [h for h in os.environ.get('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1,[::1],testserver').split(',') if h]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -19,6 +22,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # fichiers statiques hors mode debug
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware',  # Pour la traduction
     'django.middleware.common.CommonMiddleware',
@@ -56,7 +60,7 @@ DATABASES = {
 }
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_DIRS = [d for d in [BASE_DIR / 'static'] if d.exists()]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MEDIA_URL = '/media/'
